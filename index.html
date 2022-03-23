@@ -56,7 +56,17 @@
 
 </head>
 
+<!-- <body style="background-color: black; color: white;"> -->
 <body>
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+    ">
+    
     <!-- web title 밑줄 없애보기 -->
     <h1><a href="index.html">WEB</a></h1>
     
@@ -89,7 +99,7 @@
         };
         */
         (function() { // DON'T EDIT BELOW THIS LINEvar d = document, s = d.createElement('script');
-        s.src = 'https://daegu-ai-school.disqus.com/embed.js';
+        s.src = 'https://daegu-ai-school-web.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
         })();
